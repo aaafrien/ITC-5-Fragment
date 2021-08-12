@@ -31,7 +31,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Jumlah pemasukan hari ini"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="20dp"
+        android:singleLine="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,6 +48,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Jumlah pengeluaran hari ini"
+        android:singleLine="true"
         android:layout_marginStart="20dp"/>
 
     <Button

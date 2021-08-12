@@ -8,10 +8,27 @@
     tools:context=".FragmentDialog">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/pinky">
+
+        <TextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_sisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>

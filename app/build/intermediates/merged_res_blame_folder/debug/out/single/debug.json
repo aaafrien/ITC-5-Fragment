@@ -68,6 +68,10 @@
         "source": "D:\\KULIAH\\ITC\\Andro\\LatihanFragment\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "D:\\KULIAH\\ITC\\Andro\\LatihanFragment\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_dialog.xml.flat",
+        "source": "D:\\KULIAH\\ITC\\Andro\\LatihanFragment\\app\\src\\main\\res\\layout\\fragment_dialog.xml"
+    },
+    {
         "merged": "D:\\KULIAH\\ITC\\Andro\\LatihanFragment\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\KULIAH\\ITC\\Andro\\LatihanFragment\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },

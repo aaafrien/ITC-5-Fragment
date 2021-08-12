@@ -1927,6 +1927,8 @@ int id bounce 0x7f09005f
 int id bounceBoth 0x7f090060
 int id bounceEnd 0x7f090061
 int id bounceStart 0x7f090062
+int id bt_balikbln 0x7f0901e4
+int id bt_balikhr 0x7f0901e5
 int id bt_bulanan 0x7f090063
 int id bt_harian 0x7f090064
 int id bt_ibulanan 0x7f090065
@@ -2288,6 +2290,8 @@ int id transition_position 0x7f0901c9
 int id transition_scene_layoutid_cache 0x7f0901ca
 int id transition_transform 0x7f0901cb
 int id triangle 0x7f0901cc
+int id tv_dialog 0x7f0901e6
+int id tv_sisa 0x7f0901e7
 int id unchecked 0x7f0901cd
 int id uniform 0x7f0901ce
 int id unlabeled 0x7f0901cf
@@ -2395,6 +2399,7 @@ int layout design_navigation_menu_item 0x7f0c002a
 int layout design_text_input_end_icon 0x7f0c002b
 int layout design_text_input_start_icon 0x7f0c002c
 int layout fragment_bulanan 0x7f0c002d
+int layout fragment_dialog 0x7f0c007e
 int layout fragment_harian 0x7f0c002e
 int layout fragment_intro 0x7f0c007d
 int layout fragment_menu 0x7f0c002f
@@ -3105,6 +3110,7 @@ int style ThemeOverlay_MaterialComponents_TimePicker_Display 0x7f100205
 int style ThemeOverlay_MaterialComponents_Toolbar_Primary 0x7f100206
 int style ThemeOverlay_MaterialComponents_Toolbar_Surface 0x7f100207
 int style ThemeOverlayColorAccentRed 0x7f100208
+int style Transparent_Dialog 0x7f1002d7
 int style Widget_AppCompat_ActionBar 0x7f100209
 int style Widget_AppCompat_ActionBar_Solid 0x7f10020a
 int style Widget_AppCompat_ActionBar_TabBar 0x7f10020b

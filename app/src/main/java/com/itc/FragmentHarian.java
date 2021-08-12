@@ -1,14 +1,18 @@
 package com.itc;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,7 +22,9 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class FragmentHarian extends Fragment {
+
     int hasil;
+    boolean check;
 
     int[] editTextId = {
             R.id.et_masukhr,
@@ -30,8 +36,14 @@ public class FragmentHarian extends Fragment {
             R.id.bt_balikhr
     };
 
+    int[] textViewId = {
+            R.id.tv_dialog,
+            R.id.tv_sisa
+    };
+
     ArrayList<EditText> editTexts = new ArrayList<>();
     ArrayList<Button> buttons = new ArrayList<>();
+    ArrayList<TextView> textViews = new ArrayList<>();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -84,9 +96,36 @@ public class FragmentHarian extends Fragment {
         buttons.get(0).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hasil = Integer.parseInt(editTexts.get(0).getText().toString())
-                    - Integer.parseInt(editTexts.get(1).getText().toString());
 
+                try {
+                    check = true;
+                    hasil = Integer.parseInt(editTexts.get(0).getText().toString())
+                            - Integer.parseInt(editTexts.get(1).getText().toString());
+                } catch (NumberFormatException nfe) {
+                    check = false;
+                    Toast.makeText(getActivity(), "Harus masukin angka!", Toast.LENGTH_SHORT).show();
+                }
+
+                if (check==true) {
+                    AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity(), R.style.Transparent_Dialog);
+                    View dialogView = getLayoutInflater().inflate(R.layout.fragment_dialog, null);
+                    dialogBuilder.setView(dialogView);
+                    final AlertDialog dialog = dialogBuilder.create();
+                    dialog.show();
+                    for (int value : textViewId) textViews.add(dialogView.findViewById(value));
+                    textViews.get(0).setText("Sisa uang kamu tinggal : ");
+                    textViews.get(1).setText("" + hasil);
+                }
+            }
+        });
+
+        buttons.get(1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentMenu fragmentMenu = new FragmentMenu();
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fl_mainFrame, fragmentMenu);
+                transaction.commit();
             }
         });
         return view;
