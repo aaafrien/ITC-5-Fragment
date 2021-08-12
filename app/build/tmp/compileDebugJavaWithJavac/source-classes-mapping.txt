@@ -1,0 +1,15 @@
+com/itc/FragmentBulanan.java
+ com.itc.FragmentBulanan
+com/itc/BuildConfig.java
+ com.itc.BuildConfig
+com/itc/FragmentHarian.java
+ com.itc.FragmentHarian
+com/itc/MainActivity.java
+ com.itc.MainActivity
+com/itc/FragmentIntro.java
+ com.itc.FragmentIntro
+ com.itc.FragmentIntro$1
+com/itc/FragmentMenu.java
+ com.itc.FragmentMenu
+ com.itc.FragmentMenu$1
+ com.itc.FragmentMenu$2
