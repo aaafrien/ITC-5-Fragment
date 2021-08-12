@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentHarian">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengeluaran Harian"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/roundo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemasukan"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roundo"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/et_masukhr"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah pemasukan hari ini"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengeluaran"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roundo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/et_keluarhr"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah pengeluaran hari ini"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/bt_iharian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/bt_balikhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KEMBALI"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
